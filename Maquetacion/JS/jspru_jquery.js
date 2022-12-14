@@ -5,20 +5,20 @@ var apellido    = $("#apellido").val();
 
 
 var validarNombre = function(e){
-    if(nombre == null || nombre==""){
-        alert("completa el campo nombre");
+    if(nombre == null || nombre == ""){
+        alert("Completa el campo nombre");
         e.preventDefault();
     }
 }
 var validarRadio = function(e){
-    if($("#hombre").checked == true ||$("#mujer").checked == true){  
+    if($("#hombre").checked == true || $("#mujer").checked == true){  
     }else{
-        alert("completa el campo sexo")
+        alert("Completa el campo sexo")
         e.preventDefault();
     }
 }
 var validarApellido = function(e){
-    if(apellido == null || apellido==""){
+    if(apellido == null || apellido == ""){
         alert("completa el campo nombre");
         e.preventDefault();
     }
@@ -30,9 +30,6 @@ var validar = function(e){
     validarRadio(e);
 }
 formulario.addEventListener(submit,validar);
-
-
-//   var expr = /^[a-zA-z0-9_\.\-]+@[a-zA-z0-9_\.\-]+\.[a-zA-z0-9_\.\-]+$/;
 
 $(document).ready(function() {
     $("#guardar").validate({
